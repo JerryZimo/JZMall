@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jzmallj.common</groupId>
+    <groupId>com.jzmall.common</groupId>
     <artifactId>jz-registry</artifactId>
 
     <dependencies>

@@ -2,16 +2,28 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jz-registry" />
+        <module name="untitled" />
+        <module name="jz-item-service" />
+        <module name="jz-item-interface" />
+        <module name="jz-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jz-common" options="-parameters" />
+      <module name="jz-item" options="-parameters" />
+      <module name="jz-item-interface" options="-parameters" />
+      <module name="jz-item-service" options="-parameters" />
       <module name="jz-registry" options="-parameters" />
     </option>
   </component>
