@@ -6,12 +6,11 @@
 
     <groupId>com.jzmall.parent</groupId>
     <artifactId>jzmall</artifactId>
-    <packaging>pom</packaging>
+
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>jz-registry</module>
-        <module>jz-gateway</module>
-    </modules>
+        <module>jz-common</module>    </modules>
     <name>jzmall</name>
     <description>study proj for spring cloud</description>
 
@@ -19,9 +18,7 @@
     <!-- 1.pom:  用在父工程中或者聚合工程中，做jar包的版本控制
          2.jar： 将会打包成jar包，用作jar包使用
          3.war： 将会打包成war，发布在服务器上的工程。如网站或服务 -->
-
-    <!--    这边不知道为啥用不了-->
-    <!--    <packaging>pom</packaging>-->
+    <packaging>pom</packaging>
 
     <!-- https://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/htmlsingle/#using-boot-maven-->
     <!-- lookup parent from repository -->
@@ -40,10 +37,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
-        <!--        <mapper.starter.version>2.0.3</mapper.starter.version>-->
-        <!--        <mysql.version>5.5.40</mysql.version>-->
-        <!--        <pageHelper.starter.version>1.2.5</pageHelper.starter.version>-->
-        <!--        <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>-->
+        <mapper.starter.version>2.0.3</mapper.starter.version>
+        <mysql.version>5.1.32</mysql.version>
+        <pageHelper.starter.version>1.2.5</pageHelper.starter.version>
+        <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>
     </properties>
 
 
@@ -74,29 +71,29 @@
                 <scope>import</scope>
             </dependency>
             <!-- 通用Mapper启动器 -->
-            <!-- <dependency>
+             <dependency>
                  <groupId>tk.mybatis</groupId>
                  <artifactId>mapper-spring-boot-starter</artifactId>
                  <version>${mapper.starter.version}</version>
-             </dependency>-->
+             </dependency>
             <!-- 分页助手启动器 -->
-            <!--<dependency>
+            <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pageHelper.starter.version}</version>
-            </dependency>-->
+            </dependency>
             <!-- mysql驱动 -->
-            <!--<dependency>
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
-            </dependency>-->
+            </dependency>
             <!--FastDFS客户端-->
-            <!--<dependency>
+            <dependency>
                 <groupId>com.github.tobato</groupId>
                 <artifactId>fastdfs-client</artifactId>
                 <version>${fastDFS.client.version}</version>
-            </dependency>-->
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
