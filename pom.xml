@@ -10,6 +10,9 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>jz-registry</module>
+        <module>jz-item</module>
+        <module>jz-common</module>
+    </modules>
         <module>jz-common</module>
         <module>jz-gateway</module>
         <module>jz-item</module>
@@ -74,6 +77,11 @@
                 <scope>import</scope>
             </dependency>
             <!-- 通用Mapper启动器 -->
+             <dependency>
+                 <groupId>tk.mybatis</groupId>
+                 <artifactId>mapper-spring-boot-starter</artifactId>
+                 <version>${mapper.starter.version}</version>
+             </dependency>
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
