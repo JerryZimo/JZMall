@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jz-gateway" />
         <module name="jz-registry" />
-        <module name="untitled" />
-        <module name="jz-item-service" />
         <module name="jz-item-interface" />
+        <module name="jz-item-service" />
         <module name="jz-common" />
+        <module name="untitled" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jz-common" options="-parameters" />
+      <module name="jz-gateway" options="-parameters" />
       <module name="jz-item" options="-parameters" />
       <module name="jz-item-interface" options="-parameters" />
       <module name="jz-item-service" options="-parameters" />

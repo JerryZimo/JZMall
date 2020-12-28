@@ -17,7 +17,6 @@ serviceName:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
 hystrix:
   command:
     default:
@@ -25,4 +24,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 6000 # 设置hystrix的超时时间为6000ms
-
